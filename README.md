@@ -11,3 +11,6 @@ An example of Pet Store implementating the basic steps, structure and API's for 
 * Java implementation exposing a ReST web service
 * JSON payloads
 * Persistance layer via JPA
+
+### Example
+Want to see how all this work ? ... just look into some of the provided unit tests ;)

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/petstore.iml" filepath="$PROJECT_DIR$/petstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petstore-persistence/petstore-persistence.iml" filepath="$PROJECT_DIR$/petstore-persistence/petstore-persistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petstore-persistence-impl/petstore-persistence-impl.iml" filepath="$PROJECT_DIR$/petstore-persistence-impl/petstore-persistence-impl.iml" />
     </modules>
   </component>
 </project>

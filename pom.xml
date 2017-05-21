@@ -7,19 +7,45 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>petstore</name>
-  <url>http://maven.apache.org</url>
+  <name>Pet Store</name>
+  <url>https://github.com/mmamiah/pet-store/</url>
+    
+  <modules>
+      <module>petstore-persistence</module>
+      <module>petstore-persistence-impl</module>
+  </modules>  
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <junit-version>3.8.1</junit-version>  
   </properties>
+    
+  <dependencyManagement>
+      <dependencies>
+          <!-- Persistence -->
+          <dependency>
+              <groupId>org.hsqldb</groupId>
+              <artifactId>hsqldb</artifactId>
+              <version>2.3.5</version>
+          </dependency>
 
+
+          <!-- Test -->
+          <dependency>
+              <groupId>junit</groupId>
+              <artifactId>junit</artifactId>
+              <version>${junit-version}</version>
+              <scope>test</scope>
+          </dependency>
+      </dependencies>
+  </dependencyManagement>
+    
+    
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
     </dependency>
   </dependencies>
+    
 </project>

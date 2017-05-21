@@ -1,2 +1,6 @@
 .idea
 /petstore.iml
+
+.idea/compiler.xml
+/.idea
+*.iml

@@ -22,12 +22,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="petstore-data-impl" />
+        <module name="petstore-model" />
         <module name="petstore-persistence" />
+        <module name="petstore-service" />
+        <module name="petstore-service-impl" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="petstore" target="1.5" />
+      <module name="petstore-data-impl" target="1.5" />
+      <module name="petstore-model" target="1.5" />
       <module name="petstore-persistence" target="1.5" />
+      <module name="petstore-service" target="1.5" />
+      <module name="petstore-service-impl" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

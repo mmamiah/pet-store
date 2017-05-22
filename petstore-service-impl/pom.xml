@@ -11,21 +11,48 @@
 
     <groupId>com.mms.rbc</groupId>
     <artifactId>petstore-service-impl</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${pet-store-version}</version>
     <packaging>jar</packaging>
-    <name>Model</name>
+    <name>Pet Store Service Impl</name>
 
     <dependencies>
+        <!-- Pet Store -->
+        <dependency>
+            <groupId>com.mms.rbc</groupId>
+            <artifactId>petstore-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.mms.rbc</groupId>
+            <artifactId>petstore-data</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.mms.rbc</groupId>
+            <artifactId>petstore-data-impl</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.mms.rbc</groupId>
             <artifactId>petstore-service</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
+        
+        <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
         </dependency>
     </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

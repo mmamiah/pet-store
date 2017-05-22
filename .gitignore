@@ -7,3 +7,6 @@
 *.iml
 /.idea
 /*.iml
+.idea/modules.xml
+.idea/encodings.xml
+.idea/modules.xml

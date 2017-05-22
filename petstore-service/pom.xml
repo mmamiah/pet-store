@@ -11,9 +11,21 @@
 
     <groupId>com.mms.rbc</groupId>
     <artifactId>petstore-service</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${pet-store-version}</version>
     <packaging>jar</packaging>
-    <name>Model</name>
+    <name>Pet Store Service</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

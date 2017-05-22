@@ -10,10 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mms.rbc</groupId>
-    <artifactId>petstore-persistence-impl</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>petstore-data-impl</artifactId>
+    <version>${pet-store-version}</version>
     <packaging>jar</packaging>
-    <name>Persistence Impl</name>
+    <name>Data Impl</name>
     
     <properties>
         <dbh2.version>1.4.187</dbh2.version>
@@ -23,7 +23,7 @@
         <!-- petstore -->
         <dependency>
             <groupId>com.mms.rbc</groupId>
-            <artifactId>petstore-persistence</artifactId>
+            <artifactId>petstore-data</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 
@@ -35,6 +35,19 @@
         </dependency>
         
     </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

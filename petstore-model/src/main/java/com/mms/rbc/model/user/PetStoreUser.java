@@ -1,22 +1,35 @@
 package com.mms.rbc.model.user;
 
 import com.mms.rbc.enums.UserType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
 /**
  * User
  */
-public class User {
+@Entity
+public class PetStoreUser {
 	
+	@Id @GeneratedValue
 	private long id;
 	private String surname;
 	private String name;
 	private String email;
-	private String userName;
 	private UserType type;
 
-	public User() {
+//	@JsonIgnore
+	public String password;
+	private String username;
+
+	public PetStoreUser() {
 	}
 
+	public PetStoreUser(UserType type, String username) {
+		this.type = type;
+		this.username = username;
+	}
+	
 	public long getId() {
 		return id;
 	}
@@ -49,12 +62,12 @@ public class User {
 		this.email = email;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public UserType getType() {
@@ -63,5 +76,13 @@ public class User {
 
 	public void setType(UserType type) {
 		this.type = type;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }

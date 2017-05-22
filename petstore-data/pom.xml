@@ -10,17 +10,44 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mms.rbc</groupId>
-    <artifactId>petstore-persistence</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>petstore-data</artifactId>
+    <version>${pet-store-version}</version>
     <packaging>jar</packaging>
-    <name>Persistence</name>
+    <name>Data</name>
     
     <dependencies>
         <dependency>
             <groupId>com.mms.rbc</groupId>
             <artifactId>petstore-model</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.h2database</groupId>-->
+            <!--<artifactId>h2</artifactId>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

@@ -10,18 +10,30 @@
   <name>Pet Store</name>
   <url>https://github.com/mmamiah/pet-store/</url>
     
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.2.7.RELEASE</version>
+    </parent>
+
   <modules>
+      <module>petstore-model</module>
       <module>petstore-data</module>
       <module>petstore-data-impl</module>
-      <module>petstore-model</module>
       <module>petstore-service</module>
       <module>petstore-service-impl</module>
+      <module>petstore-rest-api</module>
+      <module>petstore-rest-api-impl</module>
   </modules>  
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <junit-version>3.8.1</junit-version>
-    <spring.version>4.1.6.RELEASE</spring.version>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <java.version>1.8</java.version>
+      <junit-version>3.8.1</junit-version>
+      <spring.version>4.2.6.RELEASE</spring.version>
+      <spring-boot-version>1.2.7.RELEASE</spring-boot-version>
+      <maven.version>3.3</maven.version>
+      <pet-store-version>1.0-SNAPSHOT</pet-store-version>
   </properties>
     
   <dependencyManagement>
@@ -30,19 +42,46 @@
           <dependency>
               <groupId>com.mms.rbc</groupId>
               <artifactId>petstore-model</artifactId>
-              <version>1.0-SNAPSHOT</version>
+              <version>${pet-store-version}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.mms.rbc</groupId>
+              <artifactId>petstore-data</artifactId>
+              <version>${pet-store-version}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.mms.rbc</groupId>
+              <artifactId>petstore-data-impl</artifactId>
+              <version>${pet-store-version}</version>
+              <scope>runtime</scope>
+          </dependency>
+          <dependency>
+              <groupId>com.mms.rbc</groupId>
+              <artifactId>petstore-service</artifactId>
+              <version>${pet-store-version}</version>
+          </dependency>
+          <dependency>
+              <groupId>com.mms.rbc</groupId>
+              <artifactId>petstore-service-impl</artifactId>
+              <version>${pet-store-version}</version>
+              <scope>runtime</scope>
           </dependency>
           
-          <!-- Spring -->
+          <!--Spring -->
           <dependency>
-              <groupId>org.springframework</groupId>
-              <artifactId>spring-jdbc</artifactId>
-              <version>${spring.version}</version>
+              <!-- Import dependency management from Spring Boot -->
+              <groupId>org.springframework.boot</groupId>
+              <artifactId>spring-boot-dependencies</artifactId>
+              <version>${spring-boot-version}</version>
+              <type>pom</type>
+              <scope>import</scope>
           </dependency>
           <dependency>
               <groupId>org.springframework</groupId>
-              <artifactId>spring-context</artifactId>
+              <artifactId>spring-framework-bom</artifactId>
               <version>${spring.version}</version>
+              <type>pom</type>
+              <scope>import</scope>
           </dependency>
 
           <!-- Test -->
@@ -55,12 +94,46 @@
       </dependencies>
   </dependencyManagement>
     
-    
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
     </dependency>
   </dependencies>
+
+  <build>
+      <pluginManagement>
+          <plugins>
+              <!-- Maven -->
+              <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-compiler-plugin</artifactId>
+                  <version>${maven.version}</version>
+              </plugin>
+          </plugins>
+      </pluginManagement>
+      <plugins>
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <configuration>
+                  <source>${java.version}</source>
+                  <target>${java.version}</target>
+              </configuration>
+          </plugin>
+      </plugins>
+  </build>
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
     
 </project>

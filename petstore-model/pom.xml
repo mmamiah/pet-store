@@ -11,7 +11,7 @@
 
     <groupId>com.mms.rbc</groupId>
     <artifactId>petstore-model</artifactId>
-    <version>${pet-store-version}</version>
+    <version>${pet-store.version}</version>
     <packaging>jar</packaging>
     <name>Model</name>
     

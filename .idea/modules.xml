@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/petstore.iml" filepath="$PROJECT_DIR$/petstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petstore-data/petstore-data.iml" filepath="$PROJECT_DIR$/petstore-data/petstore-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petstore-data/petstore-data-impl.iml" filepath="$PROJECT_DIR$/petstore-data/petstore-data-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petstore-model/petstore-model.iml" filepath="$PROJECT_DIR$/petstore-model/petstore-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/petstore-data/petstore-persistence.iml" filepath="$PROJECT_DIR$/petstore-data/petstore-persistence.iml" />
       <module fileurl="file://$PROJECT_DIR$/petstore-data-impl/petstore-persistence-impl.iml" filepath="$PROJECT_DIR$/petstore-data-impl/petstore-persistence-impl.iml" />
-      <module fileurl="file://$PROJECT_DIR$/petstore-model/petstore-model.iml" filepath="$PROJECT_DIR$/petstore-model/petstore-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/petstore-rest-api/petstore-rest-api.iml" filepath="$PROJECT_DIR$/petstore-rest-api/petstore-rest-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/petstore-rest-api-impl/petstore-rest-api-impl.iml" filepath="$PROJECT_DIR$/petstore-rest-api-impl/petstore-rest-api-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/petstore-service/petstore-service.iml" filepath="$PROJECT_DIR$/petstore-service/petstore-service.iml" />

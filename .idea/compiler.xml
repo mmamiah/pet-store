@@ -17,13 +17,6 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="petstore-persistence" />
-      </profile>
       <profile default="false" name="Annotation profile for petstore-model" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -73,13 +66,28 @@
         <processorPath useClasspath="true" />
         <module name="petstore-rest-api-impl" />
       </profile>
+      <profile default="false" name="Annotation profile for petstore-persistence-impl" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="petstore-persistence-impl" />
+      </profile>
+      <profile default="false" name="Annotation profile for petstore-persistence" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="petstore-persistence" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="petstore" target="1.8" />
       <module name="petstore-data" target="1.8" />
       <module name="petstore-data-impl" target="1.8" />
       <module name="petstore-model" target="1.8" />
-      <module name="petstore-persistence" target="1.5" />
+      <module name="petstore-persistence" target="1.8" />
+      <module name="petstore-persistence-impl" target="1.8" />
       <module name="petstore-rest-api" target="1.8" />
       <module name="petstore-rest-api-impl" target="1.8" />
       <module name="petstore-service" target="1.8" />

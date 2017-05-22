@@ -11,7 +11,7 @@
 
     <groupId>com.mms.rbc</groupId>
     <artifactId>petstore-service-impl</artifactId>
-    <version>${pet-store-version}</version>
+    <version>${pet-store.version}</version>
     <packaging>jar</packaging>
     <name>Pet Store Service Impl</name>
 
@@ -34,10 +34,23 @@
             <artifactId>petstore-service</artifactId>
         </dependency>
         
+        <!-- Common -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+        
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <!-- Test -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-core</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
     

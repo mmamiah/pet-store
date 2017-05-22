@@ -11,9 +11,25 @@
 
     <groupId>com.mms.rbc</groupId>
     <artifactId>petstore-service</artifactId>
-    <version>${pet-store-version}</version>
+    <version>${pet-store.version}</version>
     <packaging>jar</packaging>
     <name>Pet Store Service</name>
+
+
+
+    <dependencies>
+        <!-- Pet Store -->
+        <dependency>
+            <groupId>com.mms.rbc</groupId>
+            <artifactId>petstore-model</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.mms.rbc</groupId>
+            <artifactId>petstore-data</artifactId>
+        </dependency>
+
+    </dependencies>
+    
     <build>
         <plugins>
             <plugin>

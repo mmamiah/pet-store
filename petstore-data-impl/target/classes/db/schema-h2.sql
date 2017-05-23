@@ -1,1 +1,0 @@
-INSERT INTO petstoreuser(username) values('mmamiah');

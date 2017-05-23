@@ -1,14 +1,16 @@
 package com.mms.rbc.dao;
 
 import java.util.Collection;
-import com.mms.rbc.model.user.PetStoreUser;
+import com.mms.rbc.model.user.StoreUser;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * UserRepository
  */
-public interface PetStoreUserDao extends JpaRepository<PetStoreUser, Long> {
+@Transactional
+public interface PetStoreUserDao extends JpaRepository<StoreUser, Long> {
 	
-	public Collection<PetStoreUser> findByUserName(String userName);
+	public Collection<StoreUser> findByUserName(String userName);
 	
 }

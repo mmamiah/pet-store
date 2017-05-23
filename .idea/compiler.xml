@@ -71,14 +71,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="petstore-persistence-impl" />
       </profile>
       <profile default="false" name="Annotation profile for petstore-persistence" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="petstore-persistence" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

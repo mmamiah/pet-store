@@ -25,11 +25,11 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         
-        <!--&lt;!&ndash;  Spring implementation of Jackson for RESTful JSON &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>com.fasterxml.jackson.core</groupId>-->
-            <!--<artifactId>jackson-databind</artifactId>-->
-        <!--</dependency>-->
+        <!--  Spring implementation of Jackson for RESTful JSON -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
     </dependencies>
     
     <build>

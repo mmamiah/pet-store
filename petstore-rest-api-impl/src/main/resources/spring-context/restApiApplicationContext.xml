@@ -12,11 +12,12 @@
     <context:annotation-config/>
     <context:component-scan base-package="com.mms.rbc.controllers"/>
     
-    <bean name="h2servletRegistration" class="org.springframework.boot.context.embedded.ServletRegistrationBean">
+    <bean name="h2ServletRegistration" class="org.springframework.boot.context.embedded.ServletRegistrationBean">
         <constructor-arg ref="webServlet"/>
         <constructor-arg type="java.lang.String[]" value=""/>
         <property name="urlMappings" value="/console/*"/>
     </bean>
+    
     <bean name="webServlet" class="org.h2.server.web.WebServlet"/>
 
 </beans>

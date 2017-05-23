@@ -9,8 +9,12 @@ import org.springframework.transaction.annotation.Transactional;
  * UserRepository
  */
 @Transactional
-public interface PetStoreUserDao extends JpaRepository<StoreUser, Long> {
+public interface StoreUserDao extends JpaRepository<StoreUser, Long> {
 	
 	public Collection<StoreUser> findByUserName(String userName);
+	
+	public Collection<StoreUser> findByFirstName(String firstName);
+
+	public Collection<StoreUser> findByLastName(String lastName);
 	
 }

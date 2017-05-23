@@ -1,2 +1,3 @@
-com\mms\rbc\service\pets\PetService.class
-com\mms\rbc\service\users\UserService.class
+com\mms\rbc\service\StoreService.class
+com\mms\rbc\service\UserService.class
+com\mms\rbc\service\PetService.class

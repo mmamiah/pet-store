@@ -1,8 +1,10 @@
 package com.mms.rbc.boot;
 
 import java.util.Collection;
+import com.mms.rbc.model.pet.Pet;
 import com.mms.rbc.model.user.StoreUser;
-import com.mms.rbc.service.users.UserService;
+import com.mms.rbc.service.PetService;
+import com.mms.rbc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -25,14 +27,25 @@ public class PetStoreApplication implements CommandLineRunner  {
 	@Autowired
 	private UserService userService;
 	
+	@Autowired
+	private PetService petService;
+	
 	public static void main(String[] args) {
 		SpringApplication.run(PetStoreApplication.class, args);
 	}
 
 	@Override
 	public void run(String... strings) throws Exception {
-		Collection<StoreUser> users = userService.findByUserName("admin");
-		System.out.println("Hello Word");
+		System.out.println("PetStoreApplication started !");
+		System.out.println("Users:");
+		Collection<StoreUser> users = userService.findAll();
+		users.stream()
+				.forEach(System.out::println);
+
+		System.out.println("Pets:");
+		Collection<Pet> pets = petService.findAll();
+		pets.stream()
+				.forEach(System.out::println);
 	}
 }
 

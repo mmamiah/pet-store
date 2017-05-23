@@ -1,14 +1,13 @@
 package com.mms.rbc.model.user;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.mms.rbc.commons.PetStoreKeys;
 import com.mms.rbc.enums.UserType;
-import org.hibernate.annotations.Type;
 
 /**
  * User
@@ -16,7 +15,8 @@ import org.hibernate.annotations.Type;
 @Entity
 public class StoreUser  {
 	
-	@Id @GeneratedValue
+	@Id 
+	@GeneratedValue
 	private long id;
 	private String firstName;
 	private String lastName;
@@ -25,8 +25,9 @@ public class StoreUser  {
 	@Enumerated(EnumType.STRING)
 	private UserType userType;
 
-//	@JsonIgnore
+	@JsonIgnore
 	public String password;
+	
 	private String userName;
 
 	public StoreUser() {
@@ -91,5 +92,13 @@ public class StoreUser  {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder userToString = new StringBuilder(PetStoreKeys.OPEN_BRACKET).append(id).append(PetStoreKeys.CLOSE_BRACKET)
+				.append(PetStoreKeys.SPACE).append(userName).append(":")
+				.append(PetStoreKeys.SPACE).append(firstName).append(PetStoreKeys.SPACE).append(lastName);
+		return userToString.toString();
 	}
 }

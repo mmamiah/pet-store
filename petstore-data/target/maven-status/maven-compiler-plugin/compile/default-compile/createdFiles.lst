@@ -1,1 +1,2 @@
-com\mms\rbc\dao\PetStoreUserDao.class
+com\mms\rbc\dao\StorePetDao.class
+com\mms\rbc\dao\StoreUserDao.class

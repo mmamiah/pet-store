@@ -1,5 +1,11 @@
 package com.mms.rbc.model.pet;
 
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import com.mms.rbc.commons.PetStoreKeys;
 import com.mms.rbc.enums.PetGroup;
 import com.mms.rbc.enums.PetType;
 import com.mms.rbc.enums.PetUsage;
@@ -7,18 +13,26 @@ import com.mms.rbc.enums.PetUsage;
 /**
  * Pet
  */
+@Entity
 public class Pet {
-	
+
+	@Id 
+	@GeneratedValue
 	private long id;
 	private String name;
 	private String description;
-	
+
+	@Enumerated(EnumType.STRING)
 	private PetUsage usage;
-	private PetGroup group;
-	private PetType type;
 	
-	private int length;
-	private int weight;
+	@Enumerated(EnumType.STRING)
+	private PetGroup petGroup;
+	
+	@Enumerated(EnumType.STRING)
+	private PetType petType;
+	
+	private long length;
+	private long weight;
 	private String color;
 
 	public Pet() {
@@ -56,23 +70,23 @@ public class Pet {
 		this.usage = usage;
 	}
 
-	public PetGroup getGroup() {
-		return group;
+	public PetGroup getPetGroup() {
+		return petGroup;
 	}
 
-	public void setGroup(PetGroup group) {
-		this.group = group;
+	public void setPetGroup(PetGroup group) {
+		this.petGroup = group;
 	}
 
-	public PetType getType() {
-		return type;
+	public PetType getPetType() {
+		return petType;
 	}
 
-	public void setType(PetType type) {
-		this.type = type;
+	public void setPetType(PetType type) {
+		this.petType = type;
 	}
 
-	public int getLength() {
+	public long getLength() {
 		return length;
 	}
 
@@ -80,7 +94,7 @@ public class Pet {
 		this.length = length;
 	}
 
-	public int getWeight() {
+	public long getWeight() {
 		return weight;
 	}
 
@@ -94,5 +108,15 @@ public class Pet {
 
 	public void setColor(String color) {
 		this.color = color;
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder userToString = new StringBuilder(PetStoreKeys.OPEN_BRACKET).append(id).append(PetStoreKeys.CLOSE_BRACKET)
+				.append(PetStoreKeys.SPACE).append(name).append(PetStoreKeys.COLON)
+				.append(PetStoreKeys.SPACE).append(petGroup)
+				.append(PetStoreKeys.COMMA).append(usage)
+				.append(PetStoreKeys.COMMA).append(petType);
+		return userToString.toString();
 	}
 }

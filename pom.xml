@@ -24,6 +24,7 @@
       <module>petstore-service-impl</module>
       <module>petstore-rest-api</module>
       <module>petstore-rest-api-impl</module>
+      <!--<module>petstore-client</module>-->
   </modules>  
 
   <properties>

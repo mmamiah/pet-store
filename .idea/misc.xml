@@ -3,6 +3,10 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/petstore-client" />
+    <file type="web" url="file://$PROJECT_DIR$/petstore-rest-api-impl" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>

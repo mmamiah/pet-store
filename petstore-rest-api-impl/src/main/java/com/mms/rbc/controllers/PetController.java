@@ -32,11 +32,6 @@ public class PetController {
 		return petService.findById(petId);
 	}
 
-	@RequestMapping(method = RequestMethod.GET, value = "/")
-	public Collection<Pet> findAllFromRoot() {
-		return petService.findAll();
-	}
-
 	@RequestMapping(method = RequestMethod.GET, value = "/pet")
 	public Collection<Pet> findAll() {
 		return petService.findAll();

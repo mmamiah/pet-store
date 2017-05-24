@@ -1,3 +1,4 @@
 com\mms\rbc\boot\PetStoreApplication.class
 com\mms\rbc\controllers\PetController.class
+com\mms\rbc\controllers\IndexController.class
 com\mms\rbc\controllers\UserController.class

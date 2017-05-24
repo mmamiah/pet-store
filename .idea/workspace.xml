@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec9e22f0-811c-42a3-aad6-b5245543f791" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/petstore-client/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/src/main/java/com/mms/rbc/controllers/IndexController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/target/petstore-rest-api-impl-1.0-SNAPSHOT.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/target/petstore-rest-api-impl-1.0-SNAPSHOT.jar.original" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-data-impl/target/petstore-data-impl-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/petstore-data-impl/target/petstore-data-impl-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-data/target/petstore-data-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/petstore-data/target/petstore-data-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-model/target/petstore-model-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/petstore-model/target/petstore-model-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/target/classes/com/mms/rbc/controllers/PetController.class" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/target/classes/com/mms/rbc/controllers/PetController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/target/classes/com/mms/rbc/controllers/UserController.class" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/target/classes/com/mms/rbc/controllers/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api/target/petstore-rest-api-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/petstore-rest-api/target/petstore-rest-api-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-service-impl/target/petstore-service-impl-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/petstore-service-impl/target/petstore-service-impl-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-service/target/petstore-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/petstore-service/target/petstore-service-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-data-impl/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/petstore-data-impl/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-data/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/petstore-data/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-model/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/petstore-model/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/pom.xml" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/src/main/java/com/mms/rbc/controllers/PetController.java" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/src/main/java/com/mms/rbc/controllers/PetController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/src/main/java/com/mms/rbc/controllers/UserController.java" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/src/main/java/com/mms/rbc/controllers/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/target/surefire-reports/TEST-com.mms.rbc.controllers.PetControllerTest.xml" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/target/surefire-reports/TEST-com.mms.rbc.controllers.PetControllerTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api-impl/target/surefire-reports/com.mms.rbc.controllers.PetControllerTest.txt" afterPath="$PROJECT_DIR$/petstore-rest-api-impl/target/surefire-reports/com.mms.rbc.controllers.PetControllerTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-rest-api/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/petstore-rest-api/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-service-impl/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/petstore-service-impl/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-service-impl/target/surefire-reports/TEST-com.mms.rbc.service.impl.PetServiceImplTest.xml" afterPath="$PROJECT_DIR$/petstore-service-impl/target/surefire-reports/TEST-com.mms.rbc.service.impl.PetServiceImplTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-service-impl/target/surefire-reports/com.mms.rbc.service.impl.PetServiceImplTest.txt" afterPath="$PROJECT_DIR$/petstore-service-impl/target/surefire-reports/com.mms.rbc.service.impl.PetServiceImplTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/petstore-service/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/petstore-client/pom.xml" afterPath="$PROJECT_DIR$/petstore-client/pom.xml" />
     </list>
     <ignored path="petstore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,21 +56,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/petstore-client/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.909091">
-              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="9" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.43715847">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61764705">
-              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -193,8 +161,8 @@
         <option value="$PROJECT_DIR$/petstore-rest-api-impl/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/petstore-rest-api-impl/src/main/java/com/mms/rbc/controllers/IndexController.java" />
         <option value="$PROJECT_DIR$/petstore-rest-api-impl/src/main/java/com/mms/rbc/controllers/UserController.java" />
-        <option value="$PROJECT_DIR$/petstore-client/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/petstore-client/pom.xml" />
       </list>
     </option>
   </component>
@@ -976,7 +944,7 @@
       <workItem from="1495538234574" duration="9802000" />
       <workItem from="1495568789421" duration="5097000" />
       <workItem from="1495577122111" duration="4795000" />
-      <workItem from="1495606708465" duration="20865000" />
+      <workItem from="1495606708465" duration="21651000" />
     </task>
     <servers />
   </component>
@@ -1013,11 +981,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118485000" />
+    <option name="totallyTimeSpent" value="119271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Issues" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271028" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1036,15 +1004,15 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3271028" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="848" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943925" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5257009" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28154206" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2254673" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868853" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="21" side_tool="true" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3025568" sideWeight="0.28323698" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2170418" sideWeight="0.716763" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2170418" sideWeight="0.5821138" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2170418" sideWeight="0.41788617" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21168274" sideWeight="0.4700162" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Hibernate Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5957944" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
@@ -1489,18 +1457,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/petstore-client/pom.xml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.909091">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="9" selection-end-column="20" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/petstore-client/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61764705">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.43715847">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>

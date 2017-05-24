@@ -9,4 +9,6 @@ import com.mms.rbc.service.StoreService;
  */
 public interface UserService extends StoreService<StoreUser> {
 
+	public StoreUser findUser(String userName, String password);
+	
 }

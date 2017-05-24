@@ -1,7 +1,7 @@
 package com.mms.rbc.service.impl;
 
 import java.util.Collection;
-import com.mms.rbc.dao.StoreUserDao;
+import com.mms.rbc.dao.UserDao;
 import com.mms.rbc.model.user.StoreUser;
 import com.mms.rbc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,24 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl implements UserService {
 	
 	@Autowired
-	private StoreUserDao userDao;
+	private UserDao userDao;
+
+	public UserServiceImpl() {
+		
+	}
+
+	public UserServiceImpl(UserDao userDao) {
+		this.userDao = userDao;
+	}
+
+	@Override
+	public StoreUser findUser(String userName, String password) {
+		StoreUser user = userDao.findUser(userName, password);
+		if(user==null){
+			user = new StoreUser();
+		}
+		return user;
+	}
 
 	@Override
 	public Collection<StoreUser> findByName(String userName) {

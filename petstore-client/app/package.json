@@ -1,9 +1,0 @@
-{
-  "name"    : "pet-store-client",
-  "version" : "0.1.0",
-  "description": "Pet Store",
-  "main"    : "main.js",
-  "scripts" : { "start" : "electron ."},
-   "repository": "",
-   "license": ""
-}

@@ -12,5 +12,12 @@ An example of Pet Store implementating the basic steps, structure and API's for 
 * JSON payloads
 * Persistance layer via JPA
 
-### Example
-Want to see how all this work ? ... just look into some of the provided unit tests ;)
+## Getting started
+
+To get the Node apps running locally:
+
+- Clone this repo
+- `npm install` to install all required dependencies
+- `node main.js` to start the local server, or for dev purpose, install 'nodemon' `(npm install -g nodemon)`, and run the server: `nodemon main.js`.
+
+NODEMON is restarting automatically server when files change.

@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="petStore">
   <head>
+    <!-- META -->
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet Store!</title>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/nav.css">
+    <link rel="stylesheet" href="/assets/css/pet-info.css">
+    <link rel="stylesheet" href="/assets/css/store-info.css">
+    <link rel="stylesheet" href="/assets/css/pet-info-details.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="/assets/js/core.js"></script>
   </head>
   <body>
-    <h1>Hello Store!</h1>
-    We are using node <script>document.write(process.versions.node)</script>,
-    Chrome <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <nav>
+      <div class="nav-section store-group" ng-controller="userCtrl">
+        <div class="store-details">
+          <div class="petstore-ref"><a class="" href="/">Pet Store</a></div>
+          <div class="login-option">
+            <ul>
+              <li><a class="button flat">Sing In</a></li>
+              <li><a class="button">Sing Up</a></li>
+            </ul>
+          </div>
+          <div class="container">
+            <input name="searchPet" placeholder="Which Pet do you want to search" autocomplete="off" type="text"/>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <article class="pet-info" ng-controller="petCtrl">
+        <div class="container">
+          <div class="store-group">
+            <div class="store-details">
+              <p>We have actually {{petSum}} pet available</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="pet-info-details" ng-controller="petInfoDetailsCtrl">
+        <div class="container">
+          <div class="store-group">
+            <div class="store-details">
+              <p>Pet Info details</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="store-info" ng-controller="storeInfoCtrl">
+        <div class="container">
+          <div class="store-group">
+            <div class="store-details">
+              <p>Store Info details</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <footer class="bs-footer">
+      <div class="container">This is the footer info</div>
+    </footer>
   </body>
 </html>

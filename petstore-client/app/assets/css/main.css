@@ -1,0 +1,14 @@
+body .store-group {
+  display: table;
+}
+
+body .store-details {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+body footer.bs-footer {
+   height:200px;   /* Height of the footer */
+     color: #fff;
+     background-color: #473e3e;
+}

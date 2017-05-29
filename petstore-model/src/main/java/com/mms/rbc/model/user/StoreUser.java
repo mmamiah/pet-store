@@ -7,7 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mms.rbc.commons.PetStoreKeys;
-import com.mms.rbc.enums.UserType;
+import com.mms.rbc.enums.UserRole;
 
 /**
  * User
@@ -23,7 +23,7 @@ public class StoreUser  {
 	private String email;
 	
 	@Enumerated(EnumType.STRING)
-	private UserType userType;
+	private UserRole userRole;
 
 	@JsonIgnore
 	public String password;
@@ -33,8 +33,8 @@ public class StoreUser  {
 	public StoreUser() {
 	}
 
-	public StoreUser(UserType userType, String userName) {
-		this.userType = userType;
+	public StoreUser(UserRole userRole, String userName) {
+		this.userRole = userRole;
 		this.userName = userName;
 	}
 	
@@ -78,12 +78,12 @@ public class StoreUser  {
 		this.userName = username;
 	}
 
-	public UserType getUserType() {
-		return userType;
+	public UserRole getUserRole() {
+		return userRole;
 	}
 
-	public void setUserType(UserType userType) {
-		this.userType = userType;
+	public void setUserRole(UserRole userRole) {
+		this.userRole = userRole;
 	}
 
 	public String getPassword() {

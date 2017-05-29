@@ -15,9 +15,19 @@
   app.use(methodOverride());
 
   // application -------------------------------------------------------------
-    app.get('*', function(req, res) {
-        res.sendfile('./app/index.html'); // load the single view file (angular will handle the page changes on the front-end)
-    });
+  app.use(express.static(__dirname + '/app'));
+  // GET method route
+  app.get('*', function(req, res) {
+      res.sendfile('./app/index.html');
+  });
+  // POST method route
+  app.post('*', function(req, res) {
+      res.sendfile('./app/index.html');
+  });
+  // DELETE method route
+  app.delete('*', function(req, res) {
+      res.sendfile('./app/index.html');
+  });
 
   // listen (start app with node server.js) ======================================
   app.listen(8081);

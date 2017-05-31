@@ -1,5 +1,41 @@
 .pet-info-details  {
-  min-height: 500px;
   color: #fff;
   background-color: #92d511;
+}
+
+article.pet-info {
+  /*font-size: 150%;
+  font-weight: 300;*/
+  font-size: 42px;
+  font-weight: 200;
+}
+
+article.pet-info-details table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 16px;
+  width: 480px;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+article.pet-info-details th {
+  font-size: 18px;
+  font-weight: normal;
+  background: #b9c9fe;
+  border-top: 4px solid #aabcfe;
+  border-bottom: 1px solid #fff;
+  color: #039;
+  padding: 8px;
+}
+
+article.pet-info-details td {
+  background: #e8edff;
+  border-bottom: 1px solid #fff;
+  color: #669;
+  border-top: 1px solid transparent;
+  padding: 8px;
+  width: 50%;
+  white-space: nowrap;
+  overflow: hidden;
 }

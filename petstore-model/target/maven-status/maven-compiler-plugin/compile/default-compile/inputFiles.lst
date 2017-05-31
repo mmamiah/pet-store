@@ -1,7 +1,8 @@
 D:\Workspace\rbc_pet_store\petstore\petstore-model\src\main\java\com\mms\rbc\model\pet\Pet.java
 D:\Workspace\rbc_pet_store\petstore\petstore-model\src\main\java\com\mms\rbc\enums\PetUsage.java
 D:\Workspace\rbc_pet_store\petstore\petstore-model\src\main\java\com\mms\rbc\commons\PetStoreKeys.java
+D:\Workspace\rbc_pet_store\petstore\petstore-model\src\main\java\com\mms\rbc\enums\StorePrivilege.java
+D:\Workspace\rbc_pet_store\petstore\petstore-model\src\main\java\com\mms\rbc\enums\UserRole.java
 D:\Workspace\rbc_pet_store\petstore\petstore-model\src\main\java\com\mms\rbc\enums\PetGroup.java
 D:\Workspace\rbc_pet_store\petstore\petstore-model\src\main\java\com\mms\rbc\model\user\StoreUser.java
-D:\Workspace\rbc_pet_store\petstore\petstore-model\src\main\java\com\mms\rbc\enums\UserType.java
 D:\Workspace\rbc_pet_store\petstore\petstore-model\src\main\java\com\mms\rbc\enums\PetType.java

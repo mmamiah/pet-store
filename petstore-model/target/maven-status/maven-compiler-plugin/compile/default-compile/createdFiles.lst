@@ -2,6 +2,7 @@ com\mms\rbc\commons\PetStoreKeys.class
 com\mms\rbc\model\user\StoreUser.class
 com\mms\rbc\enums\PetGroup.class
 com\mms\rbc\model\pet\Pet.class
-com\mms\rbc\enums\UserType.class
+com\mms\rbc\enums\UserRole.class
 com\mms\rbc\enums\PetType.class
+com\mms\rbc\enums\StorePrivilege.class
 com\mms\rbc\enums\PetUsage.class

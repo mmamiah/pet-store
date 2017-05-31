@@ -10,7 +10,7 @@
     <import resource="classpath*:spring-context/serviceApplicationContext.xml"/>
     
     <context:annotation-config/>
-    <context:component-scan base-package="com.mms.rbc.controllers"/>
+    <context:component-scan base-package="com.mms.rbc.controllers, com.mms.rbc.filters"/>
     
     <bean name="h2ServletRegistration" class="org.springframework.boot.context.embedded.ServletRegistrationBean">
         <constructor-arg ref="webServlet"/>

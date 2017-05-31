@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="/assets/css/pet-info-details.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+    <script src="/assets/js/petstoreservice.js"></script>
+    <script src="/assets/js/broadcastkeys.js"></script>
     <script src="/assets/js/core.js"></script>
   </head>
   <body>
@@ -39,32 +41,112 @@
         <div class="container">
           <div class="store-group">
             <div class="store-details">
-              <p>We have actually {{petSum}} pet available</p>
+              <h1>{{petSum}} pet(s) are actually available in our store take a look,</h1>
+              <h1>they are waiting for you !</h1>
+              </br>
+              <h3>By Marc Mamiah on May, 2017</h3>
             </div>
           </div>
         </div>
       </article>
       <article class="pet-info-details" ng-controller="petInfoDetailsCtrl">
         <div class="container">
-          <div class="store-group">
-            <div class="store-details">
-              <p>Pet Info details</p>
-            </div>
-          </div>
+          <h3>Our pet repository:</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>DESCRIPTION</th>
+                <th>USAGE</th>
+                <th>GROUP</th>
+                <th>TYPE</th>
+                <th>COLOR</th>
+                <th>-/-</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr ng-repeat="pet in pets">
+                <td>{{pet.id}}</td>
+                <td>{{pet.name}}</td>
+                <td>{{pet.description}}</td>
+                <td>{{pet.usage}}</td>
+                <td>{{pet.petGroup}}</td>
+                <td>{{pet.petType}}</td>
+                <td>{{pet.color}}</td>
+                <td><a>delete</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </article>
       <article class="store-info" ng-controller="storeInfoCtrl">
         <div class="container">
-          <div class="store-group">
-            <div class="store-details">
-              <p>Store Info details</p>
-            </div>
+          <h3>Add a pet</h3>
+          <div class="formcontainer">
+            <form role="form" ng-submit="processForm()">
+            <!-- <input name="id" value="" type="hidden"> -->
+              <div class="">
+                  <div class="form_label">
+                    <label for="petname">Name<span class="req-field">&nbsp;*</span></label>
+                  </div>
+                  <div class="form_data">
+                    <input id="petname" name="name" value="" placeholder="Your pet name" size="30" maxlength="20" tabindex="3" type="text" ng-model="formData.name">
+                  </div>
+
+                  <div class="form_label">
+                    <label for="petusage">Usage<span class="req-field">&nbsp;*</span></label>
+                  </div>
+                  <div class="form_data">
+                    <select id="petusage" name="usage" placeholder="Your pet usage"  tabindex="4" ng-model="formData.usage">
+                      <option value="">&nbsp;</option>
+                      <option value="{{usage}}" ng-repeat="usage in petUsages">{{usage}}</option>
+                    </select>
+                  </div>
+
+                  <div class="form_label">
+                    <label for="petGroup">Group</label>
+                  </div>
+                  <div class="form_data">
+                    <select id="petGroup" name="petGroup" placeholder="Your pet group"  tabindex="5" ng-model="formData.petGroup">
+                      <option value="">&nbsp;</option>
+                      <option value="{{group}}" ng-repeat="group in petGroups">{{group}}</option>
+                    </select>
+                  </div>
+                  <div class="form_label">
+                    <label for="petType">Type</label>
+                  </div>
+                  <div class="form_data">
+                    <select id="petType" name="petType" placeholder="Your pet type"  tabindex="6" ng-model="formData.petType">
+                      <option value="">&nbsp;</option>
+                      <option value="{{type}}" ng-repeat="type in petTypes">{{type}}</option>
+                    </select>
+                  </div>
+                  <div class="form_label">
+                    <label for="petColor">Color</label>
+                  </div>
+                  <div class="form_data">
+                    <input name="color" id="petColor" value="" placeholder="Your pet color" size="22" tabindex="6" type="text" ng-model="formData.color">
+                  </div>
+
+                  <div class="form_label">
+                    <label for="description">Comment</label>
+                  </div>
+                  <div class="form_data">
+                    <textarea id="description" name="description" cols="45" rows="8" tabindex="7" ng-model="formData.description"></textarea>
+                  </div>
+
+                  <div >
+                    <input id="submit" name="submit" value="Save" tabindex="7" type="submit">
+                  </div>
+               </div>
+            </form>
           </div>
         </div>
       </article>
     </section>
-    <footer class="bs-footer">
+    <!-- <footer class="bs-footer">
       <div class="container">This is the footer info</div>
-    </footer>
+    </footer> -->
   </body>
 </html>

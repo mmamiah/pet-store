@@ -1,0 +1,3 @@
+var StoreKeys = {
+    petsLoadedKey : 'petsLoaded'
+};

@@ -1,12 +1,15 @@
 package com.mms.rbc.controllers;
 
 import java.util.Collection;
+import com.mms.rbc.enums.PetGroup;
+import com.mms.rbc.enums.PetType;
+import com.mms.rbc.enums.PetUsage;
 import com.mms.rbc.model.pet.Pet;
 import com.mms.rbc.service.PetService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,7 +25,8 @@ public class PetController {
 	private PetService petService;
 	
 	@RequestMapping(method = RequestMethod.POST, value = "/pet")
-	public ResponseEntity<?> savePet(@ModelAttribute("pet") Pet pet) {
+	public ResponseEntity<?> savePet(ModelMap modelMap) {
+		Pet pet = new Pet();
 		pet = petService.save(pet);
 		return new ResponseEntity<>(pet, HttpStatus.OK);
 	}
@@ -41,6 +45,21 @@ public class PetController {
 	public ResponseEntity<?> delete(@PathVariable("petId") long petId) {
 		petService.delete(petId);
 		return new ResponseEntity<>(petId, HttpStatus.OK);
+	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/pet/petusages")
+	public PetUsage[] getPetUsages() {
+		return PetUsage.values();
+	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/pet/petgroups")
+	public PetGroup[] getPetGroups() {
+		return PetGroup.values();
+	}
+
+	@RequestMapping(method = RequestMethod.GET, value = "/pet/pettypes")
+	public PetType[] getPetTypes() {
+		return PetType.values();
 	}
 	
 }

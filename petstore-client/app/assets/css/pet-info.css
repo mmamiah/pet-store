@@ -2,7 +2,6 @@
 section article.pet-info {
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 500px;
   color: #fff;
   background-image: url('/assets/img/green-bird.jpg');
 }

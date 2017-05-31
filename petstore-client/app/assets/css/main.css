@@ -12,3 +12,73 @@ body footer.bs-footer {
      color: #fff;
      background-color: #473e3e;
 }
+
+section article {
+  min-height: 500px;
+}
+
+section article .store-details {
+  transform: translateY(50%);
+}
+
+body article .container {
+  display: table;
+}
+
+article a {
+  cursor: pointer;
+}
+
+article form {
+  margin-bottom: 2em;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus, textarea:focus {
+  border-color: #5f9dd2;
+  box-shadow: 0 0 0 1px #5f9dd2;
+}
+
+input[type="text"], input[type="password"], select, textarea {
+  background: rgba(144, 144, 144, 0.075);
+  border-color: rgba(144, 144, 144, 0.25);
+  height: 2.75em;
+  border-radius: 5px;
+  width: 35em;
+  border-width: 1px;
+}
+
+article textarea {
+  height: 200px;
+}
+
+article div .req-field {
+  color: #c30;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+.form_label label {
+  height: 2.75em;
+  text-align: right;
+  color: #4d5968;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.form_data {
+  padding-bottom: 2em;
+}
+
+article input[type="submit"] {
+  box-shadow: none;
+  background-color: #5f9dd2;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  border-radius: 5px;
+  font-weight: 700;
+
+  line-height: 2em;
+  font-size: 16px;
+}

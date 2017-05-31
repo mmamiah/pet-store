@@ -30,13 +30,26 @@ petStoreModule.controller('petCtrl', ['$scope', 'PetStoreService', function($sco
   });
 }]);
 
-petStoreModule.controller('petInfoDetailsCtrl', ['$scope', 'PetStoreService', function($scope, petStoreService){
+petStoreModule.controller('petInfoDetailsCtrl', ['$scope', '$http', 'PetStoreService', function($scope, $http, petStoreService){
   $scope.$on(StoreKeys.petsLoadedKey, function(event, args){
     $scope.pets = args;
   });
 
-  $scope.deletePet = function(id){
-   alert("Deleting: " + id);
+  $scope.hiddenRows = [];
+
+  $scope.shouldHide = function(index){
+    return $scope.hiddenRows.indexOf(index) > -1;
+  }
+
+  $scope.deletePet = function(id, index){
+   $http.delete('http://127.0.0.1:8080/pet/' + id)
+    .success(function (data, status, headers) {
+      $scope.hiddenRows.push(index);
+      alert("Pet #" + id + ",  has been deleted");
+    })
+    .error(function (data, status, header, config) {
+      alert("Cannot delete Pet #" + id);
+    });
  };
 }]);
 

@@ -24,9 +24,8 @@ public class PetController {
 	@Autowired
 	private PetService petService;
 	
-	@RequestMapping(method = RequestMethod.POST, value = "/pet", headers = {"Accept=application/json"})
+	@RequestMapping(method = RequestMethod.POST, value = "/pet/")
 	public ResponseEntity<?> savePet(@RequestBody Pet pet) {
-//		Pet pet = new Pet();
 		pet = petService.save(pet);
 		return new ResponseEntity<>(pet, HttpStatus.OK);
 	}

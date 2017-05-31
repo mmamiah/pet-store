@@ -30,7 +30,8 @@ public class PetStoreCorsFilter extends OncePerRequestFilter {
 
 		String origin = request.getHeader("origin");
 		origin = (origin == null || origin.equals("")) ? "null" : origin;
-		response.addHeader("Access-Control-Allow-Origin", origin);
+//		response.addHeader("Access-Control-Allow-Origin", origin);
+		response.setHeader("Access-Control-Allow-Origin", "*");
 		response.addHeader("Access-Control-Allow-Methods", "POST, GET, PUT, UPDATE, DELETE, OPTIONS");
 		response.addHeader("Access-Control-Allow-Credentials", "true");
 		response.addHeader("Access-Control-Allow-Headers", "Authorization, origin, content-type, accept, x-requested-with");

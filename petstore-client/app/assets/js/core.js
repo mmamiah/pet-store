@@ -8,7 +8,7 @@ petStoreModule.config(['$httpProvider', function($httpProvider) {
     //Remove the header used to identify ajax call  that would prevent CORS from working
     delete $httpProvider.defaults.headers.common['X-Requested-With'];
 
-    $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
+    // $httpProvider.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
 }]);
 
 // Services
@@ -34,6 +34,10 @@ petStoreModule.controller('petInfoDetailsCtrl', ['$scope', 'PetStoreService', fu
   $scope.$on(StoreKeys.petsLoadedKey, function(event, args){
     $scope.pets = args;
   });
+
+  $scope.deletePet = function(id){
+   alert("Deleting: " + id);
+ };
 }]);
 
 petStoreModule.controller('storeInfoCtrl', ['$scope', '$http', 'PetStoreService', function($scope, $http, petStoreService){
@@ -56,6 +60,7 @@ petStoreModule.controller('storeInfoCtrl', ['$scope', '$http', 'PetStoreService'
 
   // from: application/x-www-form-urlencoded
   $scope.formData = {};
+
   $scope.processForm = function(){
     var dataObj = {
 				name : $scope.formData.name,
@@ -67,7 +72,7 @@ petStoreModule.controller('storeInfoCtrl', ['$scope', '$http', 'PetStoreService'
 		};
     var data =  'name=' + $scope.formData.name + '&usage=' + $scope.formData.usage + '&petGroup=' + $scope.formData.petGroup
             + '&petType=' + $scope.formData.petType + '&color=' + $scope.formData.color + '&description=' + $scope.formData.description;
-    $http.post('http://127.0.0.1:8080/pet',  data)
+    $http.post('http://127.0.0.1:8080/pet',  dataObj)
     .success(function(data) {
         if (!data.success) {
           // if not successful, bind errors to error variables
@@ -81,7 +86,7 @@ petStoreModule.controller('storeInfoCtrl', ['$scope', '$http', 'PetStoreService'
         }
       })
       .error(function(data, status, headers, config) {
-			     alert( "failure message: " + JSON.stringify({data: data}));
+			     alert( "failure message: " + JSON.stringify({data: data}) + ", Status: " + status);
        });
   }
 }]);
